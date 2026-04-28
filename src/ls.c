@@ -52,6 +52,6 @@ const char* format_strtime(const __time_t t) {
 
         localtime_r(&t, &time);
 
-        strftime(time_buf, BUF_SIZ, "%d %m %H:%M:%S %Y", &time);
+        strftime(time_buf, BUF_SIZ, "%d/%m/%Y-%H:%M:%S", &time);
         return time_buf;
 }
